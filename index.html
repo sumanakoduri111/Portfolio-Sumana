@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sumana K</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sumana K</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+   
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Sumana profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sumana K</h1>
+        <p class="section__text__p2">Full Stack Java Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/sumana-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sumana-k0206'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sumanakoduri111'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Work Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>9 years <br />Java Full Stack Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Technology<br />Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a passionate Java Full Stack Developer with 9 years of experience,
+              I specialize in building scalable and user-centric web applications. 
+              Proficient in Java, Spring Boot, Hibernate, and RESTful APIs on the back-end, 
+              and skilled in HTML, CSS, JavaScript, React, and Angular on the front-end, 
+              I deliver seamless, high-performance solutions. With expertise in relational and 
+              NoSQL databases like MySQL and MongoDB, I thrive in agile environments, 
+              collaborating with teams to optimize performance and deliver high-quality software.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Work Experience</h1>
+    
+            <section class="work-experience"> 
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="experience-card">
+            <div class="left-border"></div>
+            <div class="content">
+              
+
+             <!--  <h2><span class="icon">☰</span> California State University </h2> -->
+                <h2>
+                  <span class="icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </span>
+                  CNO Financial Group
+                </h2>
+              <!--  <h2><span class="icon">≣</span> California State University </h2> -->
+
+                <p class="role"><strong>Senior Java Full Stack Developer</strong> | Aug 2023 - Present</p>
+                <ul>
+                  <li>Led the design and development of scalable, maintainable cloud-native microservices using Java 11, Spring Boot, and AWS/GCP.</li>
+                  <li>Designed and implemented integration solutions using Apache Camel, Apache Kafka, RabbitMQ, and ActiveMQ, ensuring seamless data flow between applications.</li>
+                </ul>
+                <h2>
+                  <span class="icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </span>
+                  Cencora
+                </h2>
+              <!--  <h2><span class="icon">≣</span> California State University </h2> -->
+
+                <p class="role"><strong>Senior Java Full Stack Developer</strong> | Nov 2021 - Mar 2023</p>
+                <ul>
+                  <li>Expertise in Java J2EE architecture, Spring Boot, and Hibernate ORM for backend development. Proficient in React.js for UI development, including reusable component libraries and seamless backend integration.</li>
+                  <li>Experience deploying microservices on AWS using Docker, Kubernetes, and AWS Elastic Beanstalk. Transitioned infrastructure from monolithic to microservices, leveraging AWS RDS, EC2, and S3.</li>
+                </ul>
+                <h2>
+                  <span class="icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </span>
+                  Frontier Communication
+                </h2>
+              <!--  <h2><span class="icon">≣</span> California State University </h2> -->
+
+                <p class="role"><strong>Java Full Stack Developer</strong> | Aug 2020 - Oct 2021</p>
+                <ul>
+                  <li>Extensive experience in front-end development using Angular and React.js, including building reusable components, handling state management with Redux, and implementing form validations with reactive and template-driven forms.</li>
+                  <li>Proficient in microservices architecture with Spring Boot, Spring Security, and Spring Data, ensuring authentication, authorization, and seamless backend integration with APIs.</li>
+                </ul>
+                <h2>
+                  <span class="icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </span>
+                  Adroitent
+                </h2>
+              <!--  <h2><span class="icon">≣</span> California State University </h2> -->
+
+                <p class="role"><strong>Java /J2EE Developer</strong> | Jun 2016 - Dec 2019</p>
+                <ul>
+                  <li>Expertise in designing applications using UML, Object-Oriented (OO) concepts, and implementing MVC architecture with Spring Framework for scalable and maintainable development.</li>
+                  <li>Designed and implemented integration solutions using Apache Camel, Apache Kafka, RabbitMQ, and ActiveMQ, ensuring seamless data flow between applications.</li>
+                </ul>
+                <h2>
+                  <span class="icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </span>
+                  Lexmark Software Solutions
+                </h2>
+              <!--  <h2><span class="icon">≣</span> California State University </h2> -->
+
+                <p class="role"><strong>Java Developer</strong> | Jul 2014 - May 2016</p>
+                <ul>
+                  <li>Developed interactive user interfaces using Angular 2, Bootstrap, HTML, and CSS, implementing two-way data binding for dynamic and responsive applications.</li>
+                  <li>Expertise in building real-time data streaming applications using Apache Kafka, integrating with external REST APIs, and implementing security features using SSL.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<html>
+<head>
+<title>Skills</title>
+<style>
+  .skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-tag {
+    background-color: #e0e0e0;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .skills-container {
+            max-width: 700px;
+        }
+        .skills-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            padding: 8px 12px;
+            border-radius: 16px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        /* Colors based on the provided image */
+        .java { background-color: #dbeafe; color: #1e40af; }
+        .python { background-color: #dcfce7; color: #166534; }
+        .javascript { background-color: #ede9fe; color: #6b21a8; }
+        .typescript { background-color: #fef9c3; color: #a16207; }
+        .sql { background-color: #e5e7eb; color: #374151; }
+        .react { background-color: #dbeafe; color: #1e40af; }
+        .nextjs { background-color: #cffafe; color: #0e7490; }
+        .nodejs { background-color: #fee2e2; color: #991b1b; }
+        .express { background-color: #fee2e2; color: #991b1b; }
+        .mongodb { background-color: #dbeafe; color: #1e40af; }
+        .sqlserver { background-color: #dcfce7; color: #166534; }
+        .mysql { background-color: #ede9fe; color: #6b21a8; }
+        .snowflake { background-color: #fef9c3; color: #a16207; }
+        .cosmosdb { background-color: #e5e7eb; color: #374151; }
+        .aws { background-color: #dbeafe; color: #1e40af; }
+        .azure { background-color: #cffafe; color: #0e7490; }
+        .docker { background-color: #fce7f3; color: #9d174d; }
+        .kubernetes { background-color: #fecaca; color: #991b1b; }
+        .restapi { background-color: #fef3c7; color: #92400e; }
+        .drupal { background-color: #bfdbfe; color: #1e40af; }
+        .tailwind { background-color: #dcfce7; color: #166534; }
+        .openai { background-color: #ede9fe; color: #6b21a8; }
+        .jira { background-color: #fef9c3; color: #a16207; }
+
+    </style>
+</head>
+<body>
+
+       <h1>Skills</h1>
+       <div class="skill-container">
+
+            <span class="skill python">Java</span>
+            <span class="skill java">Python</span>
+            <span class="skill javascript">JavaScript</span>
+            <span class="skill typescript">TypeScript</span>
+            <span class="skill sql">SQL</span>
+            <span class="skill react">React</span>
+            <span class="skill nextjs">Next.js</span>
+            <span class="skill nodejs">Node.js</span>
+            <span class="skill express">Express</span>
+            <span class="skill mongodb">MongoDB</span>
+            <span class="skill sqlserver">SQL Server</span>
+            <span class="skill mysql">MySQL</span>
+            <span class="skill snowflake">Snowflake</span>
+            <span class="skill cosmosdb">Azure Cosmos DB</span>
+            <span class="skill aws">AWS</span>
+            <span class="skill azure">Azure</span>
+            <span class="skill docker">Docker</span>
+            <span class="skill kubernetes">Kubernetes</span>
+            <span class="skill restapi">REST APIs</span>
+            <span class="skill drupal">Drupal</span>
+            <span class="skill tailwind">Tailwind CSS</span>
+            <span class="skill openai">OpenAI API</span>
+            <span class="skill jira">Jira</span>
+        </div>
+    </div>
+
+</body>
+</html>
+<img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sumana.k0206@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href='https://www.linkedin.com/in/sumana-k0206'">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!------------------------------------------------------------------------------------->
+
+               <!--  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                 <p>Intermediate</p>
+                </div>
+              </article>
+                 <h3>PostgreSQL</h3>
+                 <p>Basic</p>
+                </div>
+              </article>
+                 <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+                 <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+                <h3>Git</h3>
+                 <p>Intermediate</p>
+                </div>
+         </article>
+          </div> 
+          <div class="details-container"> -- This line deletes the square box
+           <h2 class="experience-sub-title">Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                 <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>> 
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                 -<p>Intermediate</p>
+                </div>
+              </article> 
+            </div>
+          </div>
+        </div> 
+      </div> 
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'" 
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div> 
+            
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div> 
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              /button> 
+            </div>
+          </div>
+        </div>
+      </div> 
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sumana.k0206@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li> 
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+  
